@@ -6,11 +6,12 @@
 #    By: elias <zanotti.elias@gmail.com>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/16 17:08:00 by elias             #+#    #+#              #
-#    Updated: 2023/05/16 17:08:33 by elias            ###   ########.fr        #
+#    Updated: 2023/05/16 17:39:58 by elias            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-S_SRC		= main.cpp		\
+S_SRC		= main.cpp			\
+			ClapTrap.class.cpp	\
 
 S_TMP		= ${addprefix ${D_SRC}, ${S_SRC}}
 O_SRC		= $(patsubst %.c, ${D_OBJS}%.o, $(S_TMP))
