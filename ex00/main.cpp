@@ -6,15 +6,34 @@
 /*   By: elias <zanotti.elias@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 17:24:50 by elias             #+#    #+#             */
-/*   Updated: 2023/05/16 17:29:10 by elias            ###   ########.fr       */
+/*   Updated: 2023/05/16 18:52:25 by elias            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.class.hpp"
 
-int	main(int argc, char **argv)
+int	main(void)
 {
-		
+	ClapTrap	elias("ELias");
+	ClapTrap	bob("Bob");
 
+	elias.attack("Bob");
+	elias.attack("Chris");
+	elias.attack("Diana");
+	elias.attack("Elisa");
+	elias.attack("Tibo");
+	elias.attack("Nipsey");
+	elias.attack("Hussle");
+	elias.attack("CJ");
+	elias.attack("Lucas");
+	elias.attack("Leon");
+	elias.attack("Saile");
+	elias.attack("Otti");
+	while (bob.getHitPoints())
+	{
+		bob.takeDamage(2);
+		bob.beRepaired(2);
+	}
+	bob.takeDamage(1);
 	return (0);
 }
