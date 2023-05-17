@@ -6,7 +6,7 @@
 /*   By: elias <zanotti.elias@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 17:25:26 by elias             #+#    #+#             */
-/*   Updated: 2023/05/17 15:58:50 by elias            ###   ########.fr       */
+/*   Updated: 2023/05/17 16:04:09 by elias            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ class	ClapTrap
 		ClapTrap	&operator=(ClapTrap const &copy);
 
 		// Methods
-		void	attack(const std::string& target);
-		void	takeDamage(unsigned int amount);
-		void	beRepaired(unsigned int amount);
+		void		attack(const std::string& target);
+		void		takeDamage(unsigned int amount);
+		void		beRepaired(unsigned int amount);
 
 		// Getters
 		std::string	getName(void) const;

@@ -6,7 +6,7 @@
 /*   By: elias <zanotti.elias@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 13:55:43 by elias             #+#    #+#             */
-/*   Updated: 2023/05/17 15:55:36 by elias            ###   ########.fr       */
+/*   Updated: 2023/05/17 16:04:17 by elias            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class	ScavTrap: public ClapTrap
 		ScavTrap	&operator=(ScavTrap const &copy);
 	
 		// Methods
-		void	guardGate(void);
+		void		guardGate(void);
 };
 
 #endif
