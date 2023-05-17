@@ -6,7 +6,7 @@
 /*   By: elias <zanotti.elias@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 17:24:50 by elias             #+#    #+#             */
-/*   Updated: 2023/05/17 16:01:38 by elias            ###   ########.fr       */
+/*   Updated: 2023/05/17 16:18:10 by elias            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 int	main(void)
 {
-	ClapTrap	elias("ELias");
+	ScavTrap	elias("ELias");
 
 	elias.attack("Bob");
 	elias.takeDamage(2);

@@ -6,7 +6,7 @@
 /*   By: elias <zanotti.elias@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 13:55:31 by elias             #+#    #+#             */
-/*   Updated: 2023/05/17 15:54:23 by elias            ###   ########.fr       */
+/*   Updated: 2023/05/17 16:18:33 by elias            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ ScavTrap::ScavTrap()
 	std::cout << "\e[32m[ScavTrap] " << this->_name << " created.\e[0m" << std::endl;
 }
 
-ScavTrap::ScavTrap(std::string &name): ClapTrap(name)
+ScavTrap::ScavTrap(std::string name): ClapTrap(name)
 {
 	std::cout << "\e[32m[ScavTrap] " << this->_name << " created.\e[0m" << std::endl;
 }
