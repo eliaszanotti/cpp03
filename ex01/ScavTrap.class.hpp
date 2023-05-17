@@ -6,14 +6,12 @@
 /*   By: elias <zanotti.elias@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 13:55:43 by elias             #+#    #+#             */
-/*   Updated: 2023/05/17 14:56:55 by elias            ###   ########.fr       */
+/*   Updated: 2023/05/17 15:55:36 by elias            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SCAVTRAP_CLASS_HPP
 # define SCAVTRAP_CLASS_HPP
-
-# include "ClapTrap.class.hpp"
 
 class	ScavTrap: public ClapTrap
 {

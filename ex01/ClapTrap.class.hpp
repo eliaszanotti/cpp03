@@ -6,7 +6,7 @@
 /*   By: elias <zanotti.elias@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 17:25:26 by elias             #+#    #+#             */
-/*   Updated: 2023/05/17 14:56:02 by elias            ###   ########.fr       */
+/*   Updated: 2023/05/17 15:58:50 by elias            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define CLAPTRAP_CLASS_HPP
 
 # include <iostream>
-# include "ScavTrap.class.hpp"
 
 class	ClapTrap
 {

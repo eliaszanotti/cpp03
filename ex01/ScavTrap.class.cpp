@@ -6,11 +6,12 @@
 /*   By: elias <zanotti.elias@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 13:55:31 by elias             #+#    #+#             */
-/*   Updated: 2023/05/17 14:56:32 by elias            ###   ########.fr       */
+/*   Updated: 2023/05/17 15:54:23 by elias            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.class.hpp"
+#include "ScavTrap.class.hpp"
 
 // Constructors
 ScavTrap::ScavTrap()
