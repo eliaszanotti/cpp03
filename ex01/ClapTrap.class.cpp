@@ -6,7 +6,7 @@
 /*   By: elias <zanotti.elias@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/16 17:35:50 by elias             #+#    #+#             */
-/*   Updated: 2023/05/17 15:53:15 by elias            ###   ########.fr       */
+/*   Updated: 2023/05/17 16:12:56 by elias            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,17 +58,17 @@ ClapTrap	&ClapTrap::operator=(ClapTrap const &copy)
 void	ClapTrap::attack(const std::string& target)
 {
 	if (this->_hitPoints <= 0)
-		std::cout << "ClapTrap " << this->_name << " \e[31mis dead\e[0m" \
+		std::cout << "\e[33m[ClapTrap]\e[0m " << this->_name << " \e[31mis dead\e[0m" \
 			<< std::endl;
 	else if (this->_energyPoints > 0)
 	{
-		std::cout << "ClapTrap " << this->_name << " attacks " << target \
+		std::cout << "\e[33m[ClapTrap]\e[0m " << this->_name << " attacks " << target \
 			<< ", causing " << this->_attackDamage << " points of damage!" \
 			<< std::endl;
 		this->_energyPoints--;
 	}
 	else
-		std::cout << "ClapTrap " << this->_name << " \e[31mhas no energy\e[0m" \
+		std::cout << "\e[33m[ClapTrap]\e[0m " << this->_name << " \e[31mhas no energy\e[0m" \
 			<< std::endl;
 }
 
@@ -76,12 +76,12 @@ void	ClapTrap::takeDamage(unsigned int amount)
 {
 	if (this->_hitPoints > 0)
 	{
-		std::cout << "ClapTrap " << this->_name << " \e[31mtake " << amount \
+		std::cout << "\e[33m[ClapTrap]\e[0m " << this->_name << " \e[31mtake " << amount \
 			<< " points of damage !\e[0m" << std::endl;
 		this->_hitPoints -= amount;
 	}
 	else
-		std::cout << "ClapTrap " << this->_name \
+		std::cout << "\e[33m[ClapTrap]\e[0m " << this->_name \
 			<< " \e[31mis already dead\e[0m" << std::endl;
 }
 
@@ -89,16 +89,16 @@ void	ClapTrap::beRepaired(unsigned int amount)
 {
 	if (this->_energyPoints > 0 && this->_hitPoints > 0)	
 	{
-		std::cout << "ClapTrap " << this->_name << " \e[32mget " << amount \
+		std::cout << "\e[33m[ClapTrap]\e[0m " << this->_name << " \e[32mget " << amount \
 			<< " points!\e[0m" << std::endl;
 		this->_hitPoints += amount;
 		this->_energyPoints--;
 	}	
 	else if (this->_hitPoints <= 0)
-		std::cout << "ClapTrap " << this->_name << " \e[31mis dead\e[0m" \
+		std::cout << "\e[33m[ClapTrap]\e[0m " << this->_name << " \e[31mis dead\e[0m" \
 			<< std::endl;
 	else
-		std::cout << "ClapTrap " << this->_name << " \e[31mhas no energy\e[0m" \
+		std::cout << "\e[33m[ClapTrap]\e[0m " << this->_name << " \e[31mhas no energy\e[0m" \
 			<< std::endl;
 }
 
