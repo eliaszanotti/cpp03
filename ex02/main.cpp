@@ -5,18 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: elias <zanotti.elias@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/16 17:24:50 by elias             #+#    #+#             */
-/*   Updated: 2023/05/22 15:49:28 by elias            ###   ########.fr       */
+/*   Created: 2023/05/22 13:49:13 by elias             #+#    #+#             */
+/*   Updated: 2023/05/22 15:55:19 by elias            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
 #include "ClapTrap.class.hpp"
 #include "ScavTrap.class.hpp"
-#include <iostream>
+#include "FragTrap.class.hpp"
 
-int	main(void)
+int	main()
 {
-	ScavTrap	elias("ELias");
+	FragTrap	elias("ELias");
 
 	elias.attack("Bob");
 	elias.takeDamage(2);
