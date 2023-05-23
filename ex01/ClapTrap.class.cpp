@@ -16,18 +16,18 @@
 ClapTrap::ClapTrap()
 {
 	this->_name = "<null>";
-	this->_hitPoints = 10;
-	this->_energyPoints = 10;
-	this->_attackDamage = 0;
+	this->_hitPoints = 100;
+	this->_energyPoints = 50;
+	this->_attackDamage = 20;
 	std::cout << "\e[32m[ClapTrap] " << this->_name << " created.\e[0m" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name)
 {
 	this->_name = name;
-	this->_hitPoints = 10;
-	this->_energyPoints = 10;
-	this->_attackDamage = 0;
+	this->_hitPoints = 100;
+	this->_energyPoints = 50;
+	this->_attackDamage = 20;
 	std::cout << "\e[32m[ClapTrap] " << this->_name << " created.\e[0m" << std::endl;
 }
 
