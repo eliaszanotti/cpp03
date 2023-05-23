@@ -1,4 +1,6 @@
 *.swp
+.vscode
 claptrap
 scavtrap
 fragtrap
+diamondtrap
